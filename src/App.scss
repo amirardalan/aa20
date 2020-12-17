@@ -5,7 +5,8 @@
 }
 
 .App-logo {
-  height: 15vmin;
+  margin-bottom: 1.2em;
+  height: 14vmin;
   pointer-events: none;
 }
 
@@ -20,12 +21,32 @@
 }
 
 .App-title {
+  position: relative;
+  z-index: 1;
   @include font-bold;
   font-size: calc(3.5vw + 3.5vh + 2vmin);
   letter-spacing: -.04em;
+    &::before {
+      position: absolute;
+      z-index: -1;
+      content: '';
+      border-top: .25em solid $gray;
+      width: 120%;
+      top: 35%;
+      left: -5%;
+    }
+    &::after {
+      position: absolute;
+      z-index: -1;
+      content: '';
+      border-top: .25em solid $gray;
+      width: 120%;
+      top: 70%;
+      right: -10%;
+    }
 }
 
 .App-button {
   @include button-primary;
-  margin-top: 2em;
+  margin-top: 2.5em;
 }
