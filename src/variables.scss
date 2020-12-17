@@ -34,3 +34,21 @@ $accent: #7600FF;
     font-weight: 900;
     font-style: italic;
 }
+
+// Buttons
+@mixin button-primary {
+    padding: .9em 3em;
+    background-color: transparent;
+    color: $light;
+    border: 5px solid $light;
+    @include font-bold;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    outline: none;
+    cursor: pointer;
+        &:hover {
+        background-color: $light;
+        color: $dark;
+        }
+}
