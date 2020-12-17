@@ -1,0 +1,36 @@
+// Colors
+$dark: #2B2B2B;
+$light: #FFFFFF;
+$primary: #007FFF;
+$secondary: #00A85B;
+$accent: #7600FF;
+
+// Typography
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,600;0,700;0,900;1,900&display=swap');
+
+@mixin font-light {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+@mixin font-semibold {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+}
+
+@mixin font-bold {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+}
+
+@mixin font-black {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+}
+
+@mixin font-blackitalic {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
