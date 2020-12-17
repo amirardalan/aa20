@@ -1,28 +1,22 @@
-import logo from './folder.svg';
-import './App.scss';
+import Nav from './components/Nav'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import Work from './pages/Work'
+import Bio from './pages/Bio'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="folder" />
-        <h1 className="App-title">
-          Amir Ardalan
-        </h1>
-        <p>
-          UI Designer & Front-end Developer
-        </p>
-        <button
-          className="App-button"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View Work
-        </button>
-      </header>
+      <Router>
+        <Nav />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/work" component={Work} />
+          <Route path="/bio" component={Bio} />
+        </Switch>
+      </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,16 +1,6 @@
-@import 'variables';
+@import '../variables';
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  margin-bottom: 1.2em;
-  height: 14vmin;
-  pointer-events: none;
-}
-
-.App-header {
+.Home {
   background-color: $dark;
   min-height: 100vh;
   display: flex;
@@ -18,9 +8,20 @@
   align-items: center;
   justify-content: center;
   color: $light;
+  text-align: center;
+
+  &-subtitle {
+    margin-bottom: 2.5em;
+  }
 }
 
-.App-title {
+.Home-logo {
+  margin-bottom: 1.2em;
+  height: 14vmin;
+  pointer-events: none;
+}
+
+.Home-title {
   position: relative;
   z-index: 1;
   @include font-bold;
@@ -46,7 +47,6 @@
     }
 }
 
-.App-button {
+.Home-button {
   @include button-primary;
-  margin-top: 2.5em;
 }

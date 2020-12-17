@@ -48,8 +48,9 @@ $accent: #7600FF;
     letter-spacing: .15em;
     outline: none;
     cursor: pointer;
-        &:hover {
-        background-color: $light;
-        color: $dark;
-        }
+    
+    &:hover {
+    background-color: $light;
+    color: $dark;
+    }
 }
