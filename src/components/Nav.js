@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { NavData } from './NavData'
 import './Nav.scss'
-import logo from '../folder.svg'
+import logo from '../logo.svg'
 
 function Nav() {
     const [nav, setNav] = useState(false)
@@ -31,7 +31,7 @@ function Nav() {
                         )
                     })}
                     <li>
-                        <img src={logo} className="Nav-logo" alt="folder" />
+                        <img src={logo} className="Nav-logo" alt="logo" />
                     </li>
                 </ul>
             </nav>

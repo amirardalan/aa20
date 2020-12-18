@@ -1,12 +1,12 @@
 import React from 'react'
 import './Home.scss'
 import { Link } from 'react-router-dom'
-import logo from '../folder.svg'
+import logo from '../logo.svg'
 
 function Home() {
     return (
         <div className="Home">
-            <img src={logo} className="Home-logo" alt="folder" />
+            <img src={logo} className="Home-logo" alt="logo" />
             <h1 className="Home-title">
                 Amir Ardalan
             </h1>
