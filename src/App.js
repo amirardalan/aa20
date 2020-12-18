@@ -1,8 +1,8 @@
-import Nav from './components/Nav'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Home from './pages/Home'
-import Work from './pages/Work'
-import Bio from './pages/Bio'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Nav from './components/Nav';
+import Home from './pages/Home';
+import Work from './pages/Work';
+import Bio from './pages/Bio';
 
 function App() {
   return (
@@ -24,4 +24,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

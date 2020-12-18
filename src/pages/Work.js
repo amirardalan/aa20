@@ -1,5 +1,5 @@
-import React from 'react'
-import './Work.scss'
+import React from 'react';
+import './Work.scss';
 
 function Work() {
     return (
@@ -9,4 +9,4 @@ function Work() {
     );
 }
 
-export default Work
+export default Work;

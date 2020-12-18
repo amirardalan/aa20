@@ -1,5 +1,5 @@
-import React from 'react'
-import './Bio.scss'
+import React from 'react';
+import './Bio.scss';
 
 function Bio() {
     return (
@@ -9,4 +9,4 @@ function Bio() {
     );
 }
 
-export default Bio
+export default Bio;
