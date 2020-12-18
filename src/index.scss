@@ -41,4 +41,8 @@ footer {
   @include font-light;
   font-size: 12px;
   text-transform: uppercase;
+
+  span {
+    margin-right: .5em;
+  }
 }

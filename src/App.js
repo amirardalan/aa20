@@ -15,7 +15,11 @@ function App() {
           <Route path="/bio" component={Bio} />
         </Switch>
       </Router>
-      <footer>Copyright &copy; 2020 &mdash; Amir Ardalan</footer>
+      <footer>
+        Copyright &copy;
+        <span>{(new Date().getFullYear())}</span>
+        &mdash; Amir Ardalan
+      </footer>
     </div>
   )
 }
