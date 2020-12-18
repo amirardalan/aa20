@@ -1,12 +1,62 @@
 @import '../variables';
 
-.Nav-container {
-}
-
 .Nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+.Nav-menu {
+    display: none;
+    background-color: $accent;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    &.active {
+        z-index: 3;
+        position: absolute;
+        width: 100%;
+        display: block;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+.Nav-menu-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        &:active,
+        &:visited {
+            color: $light;
+        }
+        &:hover {
+            padding: 0 .4em;
+            background-color: $light;
+            color: $accent;
+        }
+    }
+}
+
+.Nav-item {
+    @include font-blackitalic;
+    font-size: calc(3vw + 3vh + 2vmin);
+    letter-spacing: .2em;
+    text-decoration: none;
+}
+
+.Nav-logo {
+    margin: 2em 0 1.2em;
+    height: 10vmin;
+    pointer-events: none;
 }
 
 .Nav-icon {
@@ -76,57 +126,4 @@
         left: 50%;
       }
     }
-}
-
-.Nav-menu {
-    display: none;
-    background-color: $accent;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    &.active {
-        z-index: 3;
-        position: absolute;
-        width: 100%;
-        display: block;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-
-.Nav-menu-items {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    a {
-        text-decoration: none;
-        text-transform: uppercase;
-        &:active,
-        &:visited {
-            color: $light;
-        }
-        &:hover {
-            padding: 0 .4em;
-            background-color: $light;
-            color: $accent;
-        }
-    }
-}
-
-.Nav-item {
-    @include font-blackitalic;
-    font-size: calc(3vw + 3vh + 2vmin);
-    letter-spacing: .2em;
-    text-decoration: none;
-}
-
-.Nav-logo {
-    margin: 2em 0 1.2em;
-    height: 10vmin;
-    pointer-events: none;
 }

@@ -10,7 +10,7 @@ function Nav() {
     const showNav = () => setNav(!nav)
 
     return (
-        <div className="Nav-container">
+        <>
             <div className="Nav">
                 <Link to="#" className={nav ? 'Nav-icon open' : 'Nav-icon'} onClick={showNav} aria-label="Open the menu">
                     <span aria-hidden="true"></span>
@@ -35,7 +35,7 @@ function Nav() {
                     </li>
                 </ul>
             </nav>
-        </div>
+        </>
     )
 }
 
