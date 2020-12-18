@@ -1,4 +1,5 @@
 import React from 'react'
+import './Bio.scss'
 
 function Bio() {
     return (

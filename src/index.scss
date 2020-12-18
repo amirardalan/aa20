@@ -17,7 +17,28 @@ h1 {
   line-height: 1em;
 }
 
+::-moz-selection {
+  color: $dark;
+  background: $light; 
+}
+
+::selection {
+  color: $dark;
+  background: $light; 
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+footer {
+  z-index: 5;
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+  color: $light;
+  @include font-light;
+  font-size: 12px;
+  text-transform: uppercase;
 }

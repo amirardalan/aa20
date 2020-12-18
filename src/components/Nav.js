@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { NavData } from './NavData'
 import './Nav.scss'
+import logo from '../folder.svg'
 
 function Nav() {
     const [nav, setNav] = useState(false)
@@ -11,11 +12,11 @@ function Nav() {
     return (
         <div className="Nav-container">
             <div className="Nav">
-                <Link to="#" className={nav ? 'Nav-icon open' : 'Nav-icon'} onClick={showNav}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <Link to="#" className={nav ? 'Nav-icon open' : 'Nav-icon'} onClick={showNav} aria-label="Open the menu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                 </Link>
             </div>
             <nav className={nav ? 'Nav-menu active' : 'Nav-menu'}>
@@ -29,6 +30,9 @@ function Nav() {
                             </li>
                         )
                     })}
+                    <li>
+                        <img src={logo} className="Nav-logo" alt="folder" />
+                    </li>
                 </ul>
             </nav>
         </div>
