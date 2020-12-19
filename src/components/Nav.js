@@ -23,7 +23,7 @@ function Nav() {
                         return (
                             <li key={index} className={item.cName}>
                                 <Link to={item.path}>
-                                    <span>{item.title}</span>
+                                    <span aria-label={item.title}>{item.title}</span>
                                 </Link>
                             </li>
                         )

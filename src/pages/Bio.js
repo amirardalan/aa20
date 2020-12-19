@@ -3,7 +3,7 @@ import './Bio.scss'
 
 function Bio() {
     return (
-        <div className="Bio">
+        <div className="Bio Page">
             <h1>Bio</h1>
         </div>
     )

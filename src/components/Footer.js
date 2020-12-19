@@ -6,7 +6,7 @@ function Footer() {
         <footer>
             Copyright &copy;
             <span>{(new Date().getFullYear())}</span>
-            &mdash; Amir Ardalan
+            &mdash; <a className="Text-link" href="/">Amir Ardalan</a>
         </footer>
     )
 }
