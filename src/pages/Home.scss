@@ -1,7 +1,6 @@
 @import '../variables';
 
 .Home {
-  background-color: $dark;
   min-height: 90vh;
   display: flex;
   flex-direction: column;
@@ -31,7 +30,8 @@
       position: absolute;
       z-index: -1;
       content: '';
-      border-top: .25em solid $gray;
+      border-top: .25em solid $light;
+      opacity: 0.2;
       width: 120%;
       top: 35%;
       left: -5%;
@@ -40,7 +40,8 @@
       position: absolute;
       z-index: -1;
       content: '';
-      border-top: .25em solid $gray;
+      border-top: .25em solid $light;
+      opacity: 0.2;
       width: 120%;
       top: 70%;
       right: -10%;

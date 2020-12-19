@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { NavData } from './NavData';
-import './Nav.scss';
-import logo from '../logo.svg';
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { NavData } from './NavData'
+import './Nav.scss'
+import logo from '../logo.svg'
 
 function Nav() {
     const [nav, setNav] = useState(false);
@@ -37,4 +37,4 @@ function Nav() {
     )
 }
 
-export default Nav;
+export default Nav
