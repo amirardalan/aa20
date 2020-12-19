@@ -49,7 +49,6 @@
 .Nav-item {
     @include font-blackitalic;
     font-size: calc(3vw + 3vh + 2vmin);
-    letter-spacing: .2em;
     text-decoration: none;
 }
 

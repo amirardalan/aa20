@@ -10,7 +10,7 @@ function Nav() {
     return (
         <>
             <div className="Nav">
-                <Link to="#" className={nav ? 'Nav-icon open' : 'Nav-icon'} onClick={showNav} aria-label="Open the menu">
+                <Link to="#" className={nav ? 'Nav-icon open' : 'Nav-icon'} onClick={showNav} aria-label={nav ? 'Close the menu' : 'Open the menu'}>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
