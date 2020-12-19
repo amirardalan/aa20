@@ -8,7 +8,7 @@
 
 .Nav-menu {
     display: none;
-    background-color: $accent;
+    background-color: $quaternary;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -41,7 +41,7 @@
         &:hover {
             padding: 0 .4em;
             background-color: $light;
-            color: $accent;
+            color: $quaternary;
         }
     }
 }
