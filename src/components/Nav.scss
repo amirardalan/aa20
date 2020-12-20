@@ -4,6 +4,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    overflow: hidden;
+    max-height: 70vh;
 }
 
 .Nav-menu {
@@ -23,6 +25,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        touch-action: none;
+        -ms-touch-action: none;
+        ::-webkit-scrollbar {
+          display: none;
+        }
 
         &+.Page {
           display: none;
@@ -78,6 +85,12 @@
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
+
+    @media (max-width: 1024px) {
+      top: 40px;
+      right: 40px;
+    }
+
     span {
       display: block;
       position: absolute;

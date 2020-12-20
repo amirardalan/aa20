@@ -11,7 +11,7 @@ function Work() {
                 <h1>Work</h1>
             </div>
             <h2>
-                Selected works from 2014 - 2020
+                Selected work
             </h2>
             <div className="Page-content-wrapper">
                 <div className="Page-content">

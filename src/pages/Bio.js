@@ -11,11 +11,11 @@ function Bio() {
                 <img src={logo} className="Page-logo" alt="logo" />
                 <h1>Bio</h1>
             </div>
-            <h2>Currently available for hire ✓</h2>
+            <h2>Available for hire ✓</h2>
             <div className="Page-content-wrapper">
                 <div className="Page-content">
                     <div className="Content-item sm">
-                        <img src={photo} className="Amir-photo" alt="Amir Ardalan Headshot" />
+                        <img src={photo} className="Bio-photo" alt="Amir Ardalan Headshot" />
                     </div>
                     <div className="Content-item">
                         <h3>Amir Ardalan</h3>
