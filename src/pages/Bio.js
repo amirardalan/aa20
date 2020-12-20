@@ -2,6 +2,7 @@ import React from 'react'
 import './Bio.scss'
 import Footer from '../components/Footer'
 import logo from '../logo.svg'
+import photo from './photo.png'
 
 function Bio() {
     return (
@@ -13,28 +14,32 @@ function Bio() {
             <h2>Currently available for hire ✓</h2>
             <div className="Page-content-wrapper">
                 <div className="Page-content">
+                    <div className="Content-item sm">
+                        <img src={photo} className="Amir-photo" alt="Amir Ardalan Headshot" />
+                    </div>
                     <div className="Content-item">
                         <h3>Amir Ardalan</h3>
-                        <strong>Front-end Developer & UI Designer</strong>
+                        <p><strong>Front-end Developer</strong></p>
+                        <p><strong>UI Designer</strong></p>
                         <p>16+ Years professional experience.</p>
                     </div>
                     <div className="Content-item">
                         <h3>Skills</h3>
-                        <strong>JavaScript / React / Sass</strong>
-                        <p>Salesforce Commerce Cloud</p>
+                        <p>JavaScript / React / Sass</p>
                         <p>User Interface Design</p>
+                        <p>Salesforce Commerce Cloud</p>
                     </div>
                     <div className="Content-item">
                         <h3>Hobbies</h3>
-                        <strong>Music Production</strong>
-                        <p>Reading</p>
-                        <p>Soccer</p>
-                        <p>Reading</p>
+                        <p>Music Production (Ableton)</p>
+                        <p>Non-fiction Reading</p>
+                        <p>Soccer / Futsal</p>
+                        <p>German Cars</p>
                         <p>Rocket League</p>
                     </div>
                     <div className="Content-item">
                         <h3>Contact</h3>
-                        <strong><a href="mailto:hi@amirardalan.com">hi@amirardalan.com</a></strong>
+                        <p><a href="mailto:hi@amirardalan.com">hi@amirardalan.com</a></p>
                         <p><a href="http://linkedin.com/in/amirardalan" target="_blank" rel="noreferrer">LinkedIn</a></p>
                     </div>
                 </div>

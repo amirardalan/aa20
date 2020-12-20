@@ -18,34 +18,30 @@ function Work() {
                     <div className="Content-item">
                         <h3>KEEN<br/> Footwear</h3>
                         <strong>LEAD UI ENGINEER</strong>
-                        <p>Salesforce Commerce Cloud</p>
-                        <p>UI design</p>
-                        <p>HTML / Sass / JavaScript</p>
-                        <p>Adaptive design</p>
+                        <p>Styleguide-driven development</p>
+                        <p>Collaborated with BASIC Agency</p>
+                        <p>Adaptive design approach</p>
                     </div>
                     <div className="Content-item">
                         <h3>CHROME<br/> Industries</h3>
                         <strong>LEAD UI ENGINEER</strong>
-                        <p>Salesforce Commerce Cloud</p>
-                        <p>UI design</p>
-                        <p>HTML / Sass / JavaScript</p>
-                        <p>Adaptive design</p>
+                        <p>Styleguide-driven development</p>
+                        <p>Collaborated with BASIC Agency</p>
+                        <p>Adaptive design approach</p>
                     </div>
                     <div className="Content-item">
                         <h3>Columbia<br/> Sportswear</h3>
-                        <strong>LEAD UI ENGINEER</strong>
+                        <strong>Web Developer I</strong>
+                        <p>Front-end development</p>
+                        <p>Responsive Design</p>
                         <p>Salesforce Commerce Cloud</p>
-                        <p>UI design</p>
-                        <p>HTML / Sass / JavaScript</p>
-                        <p>Adaptive design</p>
                     </div>
                     <div className="Content-item">
                         <h3>Hanna<br/> Andersson</h3>
-                        <strong>LEAD UI ENGINEER</strong>
-                        <p>Salesforce Commerce Cloud</p>
-                        <p>UI design</p>
+                        <strong>Agency Consultant</strong>
+                        <p>Front-end feature development</p>
+                        <p>Collaborated with internal team</p>
                         <p>HTML / Sass / JavaScript</p>
-                        <p>Adaptive design</p>
                     </div>
                 </div>         
             </div>  
