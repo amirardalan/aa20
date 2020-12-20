@@ -1,13 +1,17 @@
 @import '../variables';
 
 .Home {
-  min-height: 80vh;
+  min-height: 95vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: $light;
   text-align: center;
+
+  @media (max-width: 1024px) {
+    min-height: 80vh;
+  }
 
   &-subtitle {
     margin-bottom: 2.5em;
@@ -28,7 +32,7 @@
   position: relative;
   z-index: 1;
   @include font-bold;
-  font-size: calc(3.5vw + 3.5vh + 2vmin);
+  font-size: calc(3.5vw + 3.5vh);
   letter-spacing: -.04em;
     &::before {
       position: absolute;
@@ -50,8 +54,4 @@
       top: 70%;
       right: -10%;
     }
-}
-
-.Home-button {
-  @include button-primary;
 }

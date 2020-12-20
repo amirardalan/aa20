@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { NavData } from './NavData'
 import './Nav.scss'
-import logo from '../logo.svg'
+import logo from '../img/logo.svg'
 
 function Nav() {
     const [nav, setNav] = useState(false);

@@ -1,13 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Work.scss'
 import Footer from '../components/Footer'
-import logo from '../logo.svg'
+import logo from '../img/logo.svg'
 
 function Work() {
     return (
         <div className="Work Page">
             <div className="Page-heading">
-                <img src={logo} className="Page-logo" alt="logo" />
+                <Link to="/" aria-label="Home">
+                    <img src={logo} className="Page-logo" alt="logo" aria-hidden="true" />
+                </Link>
                 <h1>Work</h1>
             </div>
             <h2>
