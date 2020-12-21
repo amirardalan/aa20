@@ -3,12 +3,21 @@ import { Link } from 'react-router-dom'
 import './Work.scss'
 import Footer from '../components/Footer'
 import logo from '../img/logo.svg'
+import ReactGA from 'react-ga'
 
 function Work() {
+
+    const HomeLogoButton = () => {
+        ReactGA.event({
+            category: 'Logo Button',
+            action: 'Back to Home Logo Button Clicked'
+        })
+    }
+
     return (
         <div className="Work Page">
             <div className="Page-heading">
-                <Link to="/" aria-label="Home">
+                <Link to="/" onClick={HomeLogoButton} aria-label="Home">
                     <img src={logo} className="Page-logo" alt="logo" aria-hidden="true" />
                 </Link>
                 <h1>Work</h1>

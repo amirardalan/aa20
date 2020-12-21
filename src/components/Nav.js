@@ -3,14 +3,29 @@ import { Link } from 'react-router-dom'
 import { NavData } from './NavData'
 import './Nav.scss'
 import logo from '../img/logo.svg'
+import ReactGA from 'react-ga'
 
 function Nav() {
-    const [nav, setNav] = useState(false);
-    const showNav = () => setNav(!nav);
+
+    const [nav, SetNav] = useState(false);
+    const ShowNav = () => {
+        SetNav(!nav)
+        ReactGA.event({
+            category: 'Button',
+            action: 'Menu Button Clicked'
+        })
+    }
+    const NavItem = () => {
+        ReactGA.event({
+            category: 'Link',
+            action: 'Menu Nav Link Clicked'
+        })
+    }
+
     return (
         <>
             <div className="Nav">
-                <Link to="#" className={nav ? 'Nav-icon open' : 'Nav-icon'} onClick={showNav} aria-label={nav ? 'Close the menu' : 'Open the menu'}>
+                <Link to="#" className={nav ? 'Nav-icon open' : 'Nav-icon'} onClick={ShowNav} aria-label={nav ? 'Close the menu' : 'Open the menu'}>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -18,11 +33,11 @@ function Nav() {
                 </Link>
             </div>
             <nav className={nav ? 'Nav-menu active' : 'Nav-menu'}>
-                <ul className="Nav-menu-items" onClick={showNav}>
+                <ul className="Nav-menu-items" onClick={ShowNav}>
                     {NavData.map((item, index) => {
                         return (
                             <li key={index} className={item.cName}>
-                                <Link to={item.path}>
+                                <Link to={item.path} onClick={NavItem}>
                                     <span aria-label={item.title}>
                                         {item.title}
                                     </span>

@@ -4,12 +4,33 @@ import './Bio.scss'
 import Footer from '../components/Footer'
 import logo from '../img/logo.svg'
 import photo from '../img/photo.png'
+import ReactGA from 'react-ga'
 
 function Bio() {
+
+    const HomeLogoButton = () => {
+        ReactGA.event({
+            category: 'Logo Button',
+            action: 'Back to Home Logo Button Clicked'
+        })
+    }
+    const EmailLink = () => {
+        ReactGA.event({
+            category: 'Email Link',
+            action: 'Email Link Clicked'
+        })
+    }
+    const LinkedInLink = () => {
+        ReactGA.event({
+            category: 'LinkedIn Link',
+            action: 'LinkedIn Link Clicked'
+        })
+    }
+
     return (
         <div className="Bio Page">
             <div className="Page-heading">
-                <Link to="/" aria-label="Home">
+                <Link to="/" onClick={HomeLogoButton} aria-label="Home">
                     <img src={logo} className="Page-logo" alt="logo" aria-hidden="true" />
                 </Link>
                 <h1>Bio</h1>
@@ -42,8 +63,8 @@ function Bio() {
                     </div>
                     <div className="Content-item">
                         <h3>Contact</h3>
-                        <p><a href="mailto:hi@amirardalan.com">hi@amirardalan.com</a></p>
-                        <p><a href="http://linkedin.com/in/amirardalan" target="_blank" rel="noreferrer">LinkedIn</a></p>
+                        <p><a href="mailto:hi@amirardalan.com" onClick={EmailLink}>hi@amirardalan.com</a></p>
+                        <p><a href="http://linkedin.com/in/amirardalan" onClick={LinkedInLink} target="_blank" rel="noreferrer">LinkedIn</a></p>
                     </div>
                 </div>
             </div>
