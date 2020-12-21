@@ -3,8 +3,17 @@ import { Link } from 'react-router-dom'
 import './Home.scss'
 import Footer from '../components/Footer'
 import logo from '../img/logo.svg'
+import ReactGA from 'react-ga'
 
 function Home() {
+
+    const HomeButtonPrimary= () => {
+        ReactGA.event({
+            category: 'Button',
+            action: 'View Work Button Clicked'
+        })
+    }
+
     return (
         <>
             <div className="Home">
@@ -16,7 +25,7 @@ function Home() {
                 UI Designer & Front-end Developer
                 </p>
                 <Link to='./work'>
-                    <button className="Button-primary">
+                    <button className="Button-primary" onClick={HomeButtonPrimary}>
                         View Work
                     </button>
                 </Link>
