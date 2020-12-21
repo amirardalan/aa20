@@ -7,12 +7,14 @@ import Nav from './components/Nav'
 import Home from './pages/Home'
 import Work from './pages/Work'
 import Bio from './pages/Bio'
-import GA from './utils/GoogleAnalytics'
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('UA-185835431-1')
+ReactGA.pageview(window.location.pathname + window.location.search)
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      { GA.init() && <GA.RouteTracker /> }
       <Nav />
       <Switch>
         <Route path="/" exact component={Home} />
