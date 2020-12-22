@@ -1,17 +1,5 @@
 @import 'variables';
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
 body {
   margin: 0;
 	background: linear-gradient(-45deg, $primary, $secondary, $tertiary, $quaternary);
@@ -23,6 +11,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+h1 {
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+h2 {
+  @include font-light;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
 .Page {
   padding: 60px 60px 30px;
   display: flex;
@@ -30,6 +33,7 @@ body {
   align-items: flex-start;
   justify-content: left;
   text-align: left;
+  color: $light;
 
   @media (max-width: 1024px) {
     padding: 40px 40px 30px;
@@ -108,6 +112,12 @@ body {
   }
 }
 
+.Photo {
+  margin-top: 10px;
+  height: 110px;
+  width: auto;
+}
+
 a,
 a:visited,
 a:active {
@@ -118,21 +128,6 @@ a:active {
 .Text-link:hover {
   border-bottom: 2px solid $light;
   line-height: 1em;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-}
-
-h1 {
-  line-height: 1em;
-  text-transform: uppercase;
-}
-
-h2 {
-  @include font-light;
-  font-size: 14px;
-  text-transform: uppercase;
 }
 
 footer {
@@ -160,9 +155,4 @@ footer {
 ::selection {
   color: $dark;
   background: $light; 
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }

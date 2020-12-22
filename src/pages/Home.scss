@@ -9,6 +9,10 @@
   color: $light;
   text-align: center;
 
+  .h1-alt {
+    opacity: 0.3;
+  }
+
   @media (max-width: 480px) {
     min-height: 80vh;
   }
@@ -31,23 +35,11 @@
   font-size: calc(3.5vw + 3.5vh);
   letter-spacing: -.04em;
     &::before {
-      position: absolute;
-      z-index: -1;
-      content: '';
-      border-top: .25em solid $light;
-      opacity: 0.2;
-      width: 120%;
-      top: 35%;
-      left: -5%;
+      content: '< ';
+      opacity: 0.3;
     }
     &::after {
-      position: absolute;
-      z-index: -1;
-      content: '';
-      border-top: .25em solid $light;
-      opacity: 0.2;
-      width: 120%;
-      top: 70%;
-      right: -10%;
+      content: ' />';
+      opacity: 0.3;
     }
 }

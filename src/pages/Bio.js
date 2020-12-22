@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './Bio.scss'
 import logo from '../img/logo.svg'
 import photo from '../img/photo.png'
 import ReactGA from 'react-ga'
@@ -38,12 +37,12 @@ function Bio() {
             <div className="Page-content-wrapper">
                 <div className="Page-content">
                     <div className="Content-item sm">
-                        <img src={photo} className="Bio-photo" alt="Amir Ardalan Headshot" />
+                        <img src={photo} className="Photo" alt="Amir Ardalan Headshot" />
                     </div>
                     <div className="Content-item">
                         <h3>Amir Ardalan</h3>
                         <strong>Front-End Engineer <br /> UI Designer</strong>
-                        <p>16+ Years professional experience.</p>
+                        <p>15+ years professional experience.</p>
                     </div>
                     <div className="Content-item">
                         <h3>Skills</h3>
