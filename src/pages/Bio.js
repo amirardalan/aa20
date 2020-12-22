@@ -43,7 +43,7 @@ function Bio() {
                     </div>
                     <div className="Content-item">
                         <h3>Amir Ardalan</h3>
-                        <strong>Front-end Developer <br /> UI Designer</strong>
+                        <strong>Front-End Engineer <br /> UI Designer</strong>
                         <p>16+ Years professional experience.</p>
                     </div>
                     <div className="Content-item">
