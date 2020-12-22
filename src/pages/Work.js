@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Work.scss'
-import Footer from '../components/Footer'
 import logo from '../img/logo.svg'
 import ReactGA from 'react-ga'
 
@@ -54,7 +53,6 @@ function Work() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }

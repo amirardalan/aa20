@@ -39,6 +39,7 @@ $quaternary: #23d5ab;
 .Button-primary {
     padding: .9em 3em;
     background-color: transparent;
+    mix-blend-mode: screen;
     color: $light;
     border: 5px solid $light;
     @include font-bold;
@@ -49,7 +50,7 @@ $quaternary: #23d5ab;
     cursor: pointer;
     
     &:hover {
-    background-color: $light;
-    color: $dark;
+        color: black;
+        background-color: $light;
     }
 }

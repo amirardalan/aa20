@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Bio.scss'
-import Footer from '../components/Footer'
 import logo from '../img/logo.svg'
 import photo from '../img/photo.png'
 import ReactGA from 'react-ga'
@@ -65,7 +64,6 @@ function Bio() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }
