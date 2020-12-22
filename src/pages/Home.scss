@@ -1,7 +1,7 @@
 @import '../variables';
 
 .Home {
-  min-height: 95vh;
+  min-height: 93vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,16 +9,12 @@
   color: $light;
   text-align: center;
 
-  // @media (max-width: 1024px) {
-  //   min-height: 80vh;
-  // }
+  @media (max-width: 480px) {
+    min-height: 80vh;
+  }
 
   &-subtitle {
     margin-bottom: 2.5em;
-  }
-
-  &+footer {
-    margin-left: 60px;
   }
 }
 

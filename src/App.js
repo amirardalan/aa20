@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import Nav from './components/Nav'
 import Home from './pages/Home'
 import Work from './pages/Work'
@@ -14,6 +14,13 @@ function App() {
     ReactGA.pageview(window.location.pathname + window.location.search)
   }, [])
 
+  const FooterHomeLink = () => {
+    ReactGA.event({
+        category: 'Link',
+        action: 'Footer Home Link'
+    })
+}
+
   return (
     <div className="App">
       <Router>
@@ -23,6 +30,11 @@ function App() {
           <Route path="/work" component={Work} />
           <Route path="/bio" component={Bio} />
         </Switch>
+        <footer>
+          Copyright &copy;
+          <span>{(new Date().getFullYear())}</span>
+          &mdash; <Link to="/" onClick={FooterHomeLink} className="Text-link">Amir Ardalan</Link>
+        </footer>
       </Router>
     </div>
   )
