@@ -22,7 +22,7 @@ function Home() {
                     Amir Ardalan
                 </h1>
                 <p className="Home-subtitle">
-                UI Designer & Front-end Developer
+                UI Designer &amp; Front-end Developer
                 </p>
                 <Link to='./work'>
                     <button className="Button-primary" onClick={HomeButtonPrimary}>

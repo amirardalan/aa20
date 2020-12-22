@@ -79,10 +79,10 @@ body {
   width: 100%;
   margin-right: 60px;
   font-size: 14px;
-  text-transform: uppercase;
   letter-spacing: 1px;
   h3 {
     font-size: 30px;
+    text-transform: uppercase;
     border-bottom: 5px solid $light;
     margin-bottom: 12px;
     padding-bottom: 15px;
@@ -91,6 +91,9 @@ body {
     @media (max-width: 1600px) {
       font-size: 22px;
     }
+  }
+  strong {
+    text-transform: uppercase;
   }
   &:last-child {
     margin-right: 0;
