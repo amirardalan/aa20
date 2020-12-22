@@ -16,13 +16,13 @@ function Bio() {
     }
     const EmailLink = () => {
         ReactGA.event({
-            category: 'Email Link',
+            category: 'Link',
             action: 'Email Link Clicked'
         })
     }
     const LinkedInLink = () => {
         ReactGA.event({
-            category: 'LinkedIn Link',
+            category: 'Link',
             action: 'LinkedIn Link Clicked'
         })
     }
@@ -55,15 +55,13 @@ function Bio() {
                     <div className="Content-item">
                         <h3>Hobbies</h3>
                         <p>Music Production (Ableton)</p>
-                        <p>Non-fiction Reading</p>
                         <p>Soccer / Futsal</p>
                         <p>German Cars</p>
-                        <p>Rocket League</p>
                     </div>
                     <div className="Content-item">
                         <h3>Contact</h3>
-                        <p><a href="mailto:hi@amirardalan.com" onClick={EmailLink}>hi@amirardalan.com</a></p>
-                        <p><a href="http://linkedin.com/in/amirardalan" onClick={LinkedInLink} target="_blank" rel="noreferrer">LinkedIn</a></p>
+                        <p><a className="Text-link" href="mailto:hi@amirardalan.com" onClick={EmailLink}>hi@amirardalan.com</a></p>
+                        <p><a className="Text-link" href="http://linkedin.com/in/amirardalan" onClick={LinkedInLink} target="_blank" rel="noreferrer">LinkedIn</a></p>
                     </div>
                 </div>
             </div>
