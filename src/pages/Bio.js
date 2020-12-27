@@ -33,7 +33,7 @@ function Bio() {
                 </Link>
                 <h1>Bio</h1>
             </div>
-            <h2>Available for hire ✓</h2>
+            <h2>Available for hire {'✓'}</h2>
             <div className="Page-content-wrapper">
                 <div className="Page-content">
                     <div className="Content-item sm">
@@ -43,6 +43,7 @@ function Bio() {
                         <h3>Amir Ardalan</h3>
                         <strong>Front-End Engineer <br /> UI Designer</strong>
                         <p>15+ years professional experience.</p>
+                        <a className="Text-link" href="./amir-ardalan-resume.pdf">Download Resume</a>
                     </div>
                     <div className="Content-item">
                         <h3>Skills</h3>
