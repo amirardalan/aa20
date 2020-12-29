@@ -17,9 +17,9 @@ function Home() {
         <div className="Home">
             <img src={logo} className="Home-logo" alt="logo" />
             <h1 className="Home-title">Amir Ardalan</h1>
-            <p className="Home-subtitle">
+            <h2 className="Home-subtitle">
                 Front-End Engineer {'&'} UI Designer
-            </p>
+            </h2>
             <Link to='./work'>
                 <button className="Button-primary" onClick={HomeButtonPrimary}>
                     <span className="Button-text">View Work</span>
