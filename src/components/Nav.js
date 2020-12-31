@@ -45,7 +45,9 @@ function Nav() {
                             </li>
                         )
                     })}
-                    <img src={logo} className="Nav-logo" alt="logo" aria-hidden="true" />
+                    <li>
+                        <img src={logo} className="Nav-logo" alt="logo" aria-hidden="true" />
+                    </li>
                 </ul>
             </nav>
         </>
