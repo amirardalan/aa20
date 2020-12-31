@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { NavData } from './NavData'
 import './Nav.scss'
-import logo from '../img/logo.svg'
+import logo from '../img/ghost.svg'
 import ReactGA from 'react-ga'
 
 function Nav() {
@@ -45,9 +45,7 @@ function Nav() {
                             </li>
                         )
                     })}
-                    <li>
-                        <img src={logo} className="Nav-logo" alt="logo" aria-hidden="true" />
-                    </li>
+                    <img src={logo} className="Nav-logo" alt="logo" aria-hidden="true" />
                 </ul>
             </nav>
         </>
