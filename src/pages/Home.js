@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Home.scss'
-import logo from '../img/logo.svg'
+import logo from '../img/ghost.svg'
 import ReactGA from 'react-ga'
 
 function Home() {
@@ -15,7 +15,7 @@ function Home() {
 
     return (
         <div className="Home">
-            <img src={logo} className="Home-logo" alt="logo" />
+            <img src={logo} className="Home-logo" alt="Amir Ardalan Ghost Logo" />
             <h1 className="Home-title">Amir Ardalan</h1>
             <h2 className="Home-subtitle">
                 Front-End Engineer {'&'} UI Designer

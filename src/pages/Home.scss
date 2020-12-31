@@ -31,6 +31,9 @@
   margin-bottom: 1.2em;
   height: 14vmin;
   pointer-events: none;
+  animation: float 6s ease-in-out infinite;
+  position: relative;
+  z-index: 1;
 }
 
 .Home-title {
@@ -47,4 +50,17 @@
       content: ' />';
       opacity: 0.3;
     }
+}
+
+// Animation
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
