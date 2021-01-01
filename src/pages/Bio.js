@@ -24,6 +24,12 @@ function Bio() {
             action: 'LinkedIn Link Clicked'
         })
     }
+    const GitHubLink = () => {
+        ReactGA.event({
+            category: 'Link',
+            action: 'GitHub Link Clicked'
+        })
+    }
 
     return (
         <div className="Bio Page">
@@ -41,21 +47,24 @@ function Bio() {
                     </div>
                     <div className="Content-item">
                         <h3>Amir Ardalan</h3>
-                        <strong>Front-End Engineer <br /> UI Designer</strong>
-                        <p>15+ years professional experience.</p>
-                        <a className="Text-link" href="./amir-ardalan-resume.pdf">Download Resume</a>
+                        <strong>Front-End Engineer {'&'} UI Designer</strong>
+                        <p>15+ years experience</p>
+                        <p><a className="Text-link" href="./amir-ardalan-resume.pdf">Download Resume</a></p>
+                        <p><a className="Text-link" href="http://github.com/amirardalan" onClick={GitHubLink} target="_blank" rel="noreferrer">GitHub</a></p>
                     </div>
                     <div className="Content-item">
                         <h3>Skills</h3>
-                        <p>JavaScript / React / Sass</p>
-                        <p>User Interface Design</p>
+                        <p>JavaScript / React / Sass / Git</p>
+                        <p>UI Design / Adobe XD</p>
                         <p>Salesforce Commerce Cloud</p>
+                        <p>Web Accessibility</p>
                     </div>
                     <div className="Content-item">
                         <h3>Hobbies</h3>
-                        <p>Music Production (Ableton)</p>
+                        <p>Music Production / Ableton Live</p>
                         <p>Soccer / Futsal</p>
                         <p>German Cars</p>
+                        <p>Learning</p>
                     </div>
                     <div className="Content-item">
                         <h3>Contact</h3>
