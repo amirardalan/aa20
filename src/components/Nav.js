@@ -8,6 +8,7 @@ import ReactGA from 'react-ga'
 function Nav() {
 
     const [nav, SetNav] = useState(false);
+
     const ShowNav = () => {
         SetNav(!nav)
         ReactGA.event({
@@ -15,6 +16,7 @@ function Nav() {
             action: 'Menu Button Clicked'
         })
     }
+    
     const NavItem = () => {
         ReactGA.event({
             category: 'Link',

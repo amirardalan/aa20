@@ -23,9 +23,9 @@ function Footer() {
         <footer>
             <a className="Text-link Mobile-only" href="/amir-ardalan-resume.pdf" onClick={DownloadResumeButton} aria-label="Download resume"> Download Resume {'⤓'}</a>
             <p>
-            Copyright &copy;
-            <span>{(new Date().getFullYear())}</span>
-            {'–'} <Link to="/" onClick={FooterHomeLink} className="Text-link">Amir Ardalan</Link>
+                Copyright &copy;
+                <span>{(new Date().getFullYear())}</span>
+                {'–'} <Link to="/" onClick={FooterHomeLink} className="Text-link">Amir Ardalan</Link>
             </p>
             <a className="Button-secondary" href="/amir-ardalan-resume.pdf" onClick={DownloadResumeButton} target="_blank" rel="noreferrer" aria-label="Download resume"> Download Resume {'⤓'}</a>
         </footer>
