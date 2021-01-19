@@ -63,8 +63,8 @@ function Bio() {
                         <h3>Hobbies</h3>
                         <p>Music Production / Ableton Live</p>
                         <p>Soccer / Futsal</p>
+                        <p>Magic: The Gathering</p>
                         <p>German Cars</p>
-                        <p>Learning</p>
                     </div>
                     <div className="Content-item">
                         <h3>Contact</h3>
